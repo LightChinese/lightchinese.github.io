@@ -1639,6 +1639,48 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Music
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Music" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Music
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Music/YiJianMei-XueHuaPiaoPiao/" title="1. XueHuaPiaoPiao/YiJianMei 雪花飘飘/一剪梅" class="md-nav__link">
+      1. XueHuaPiaoPiao/YiJianMei 雪花飘飘/一剪梅
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3036,6 +3078,7 @@
                 <h1 id="hsk-words-in-tv-kung-fu-panda-dragon-warrior-selection-">HSK words in TV - Kung Fu Panda - Dragon Warrior Selection | 电视中的汉语水平考试词汇 - 功夫熊猫 - 竞选神龙大侠</h1>
 <iframe width="760" height="427" src="https://www.youtube.com/embed/hmmuGAMIQHs?loop=1&playlist=hmmuGAMIQHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<p>Press the arrow keys (left/right) to navigate through subtitles.</p>
 <h2 id="_1">比武大会现在开始</h2>
 <h3 id="bi-wu-da-hui-xian-zai-kai-shi">bǐ wǔ dà huì xiàn zài kāi shǐ</h3>
 <h3 id="let-the-tournament-begin">Let the tournament begin!</h3>
@@ -5085,6 +5128,7 @@
 </tr>
 </tbody>
 </table>
+<p>Press the arrow keys (left/right) to navigate through subtitles.</p>
 <h2 id="total-229-unique-110">Total: 229; Unique: 110</h2>
 <h2 id="hsk1-41">HSK1: 41个</h2>
 <table>
@@ -5824,6 +5868,52 @@
 </tr>
 </tbody>
 </table>
+<script>
+
+var nav_link_arr = [], l = document.getElementsByClassName('md-nav__link');
+var patt = /#_[0-9]+/g;
+for(var i=0; i<l.length; i++) {
+  if (patt.exec(l[i].href))
+  {
+      nav_link_arr.push(l[i])
+      console.log(l[i].href);
+  }
+}
+
+var link_idx = 0;
+var link_length = nav_link_arr.length / 2;
+
+function leftArrowPressed() {
+   link_idx--;
+   if (link_idx < 0 )
+   {
+       link_idx = link_length - 1;
+   }
+   nav_link_arr[link_idx].click();
+}
+
+function rightArrowPressed() {
+   link_idx++;
+    if (link_idx >= link_length )
+   {
+       link_idx = 0;
+   }
+   nav_link_arr[link_idx].click();
+}
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+    }
+};
+
+</script>
                 
               
               
@@ -5861,13 +5951,13 @@
           </a>
         
         
-          <a href="../../resources/HSK/HSK1-word-list/" title="HSK 1 word list" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Music/YiJianMei-XueHuaPiaoPiao/" title="1. XueHuaPiaoPiao/YiJianMei 雪花飘飘/一剪梅" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                HSK 1 word list
+                1. XueHuaPiaoPiao/YiJianMei 雪花飘飘/一剪梅
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
