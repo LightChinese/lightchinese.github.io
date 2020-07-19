@@ -26,6 +26,6 @@ for line in Lines:
         
         print("\n")
     
-    all_counter += curr_counter;
+    all_counter += curr_counter
 
 print(all_counter)
